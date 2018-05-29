@@ -1,0 +1,32 @@
+{
+  "name": "html-webpack-custom-callback-plugin",
+  "version": "0.0.1",
+  "description": "Allow custom callback to change HTML when using the html webpack plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityreader/html-webpack-custom-callback-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html-webpack-plugin",
+    "callback"
+  ],
+  "author": "Eric Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityreader/html-webpack-custom-callback-plugin/issues"
+  },
+  "homepage": "https://github.com/cityreader/html-webpack-custom-callback-plugin#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.0.6",
+    "webpack": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=6.10.3"
+  }
+}
