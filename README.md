@@ -17,8 +17,12 @@ Not that you will need v3.0.6+ of [html-webpack-plugin](https://github.com/janti
 
 Usage
 -----------
-Add the plugin to your webpack config as follows: 
+Add the plugin to your webpack config as follows:
+```javascript
+const HtmlWebpackCustomCallbackPlugin = require('html-webpack-custom-callback-plugin');
+```
 
+In your Webpack config object, add
 ```javascript
 plugins: [
   new HtmlWebpackPlugin(),
@@ -29,7 +33,7 @@ plugins: [
 ```
 Here is the example of custom callback
 ```javascript
-const updateAbtestBundleHtml = (html) => {
+const updateBundleHtml = (html) => {
   // Strip <head> tags.
   html = html.replace(/<(\/)?head>/g, '');
   // Swap <style> and <script> positions.
