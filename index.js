@@ -15,7 +15,6 @@ class HtmlWebpackCustomCallbackPlugin {
       compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(
         PLUGIN_NAME,
         (data, cb) => {
-          console.log('compilation.hooks', Object.keys(compilation.hooks));
           data.html = this.invokeCallback(data.html);
 
           cb(null, data);
